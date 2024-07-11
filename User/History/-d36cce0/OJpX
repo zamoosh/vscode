@@ -1,0 +1,46 @@
+add necessary apps:
+
+apps:
+    - dedicate_book
+    - standard_book
+    - tag
+    - language
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch again-refactor-db
+# Changes to be committed:
+#	modified:   book/tests.py
+#	new file:   dedicate_book/__init__.py
+#	new file:   dedicate_book/admin.py
+#	new file:   dedicate_book/apps.py
+#	new file:   dedicate_book/migrations/__init__.py
+#	new file:   dedicate_book/models.py
+#	new file:   dedicate_book/tests.py
+#	new file:   dedicate_book/views.py
+#	new file:   language/__init__.py
+#	new file:   language/admin.py
+#	new file:   language/apps.py
+#	new file:   language/migrations/__init__.py
+#	new file:   language/models.py
+#	new file:   language/tests.py
+#	new file:   language/views.py
+#	modified:   library/excel_parser/analyze.ipynb
+#	modified:   library/excel_parser/parse_all.py
+#	new file:   standard_book/__init__.py
+#	new file:   standard_book/admin.py
+#	new file:   standard_book/apps.py
+#	new file:   standard_book/migrations/__init__.py
+#	new file:   standard_book/models.py
+#	new file:   standard_book/tests.py
+#	new file:   standard_book/views.py
+#	new file:   tag/__init__.py
+#	new file:   tag/admin.py
+#	new file:   tag/apps.py
+#	new file:   tag/migrations/__init__.py
+#	new file:   tag/models.py
+#	new file:   tag/tests.py
+#	new file:   tag/views.py
+#
