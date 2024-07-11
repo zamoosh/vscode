@@ -30,7 +30,6 @@
         "editor.autoClosingQuotes": "always",
         "editor.rename.enablePreview": true,
         "editor.suggest.showIcons": true,
-        "editor.suggest.showColors": true
     },
     "terminal.integrated.cursorStyle": "line",
     "[html]": {
@@ -60,6 +59,8 @@
     "editor.suggest.showMethods": true,
     "editor.suggest.showTypeParameters": true,
     "editor.suggest.showVariables": true,
+    "editor.suggest.showColors": true,
+    "editor.suggest.preview": true,
     "debug.console.lineHeight": 1.7,
     "editor.autoClosingQuotes": "beforeWhitespace",
     "editor.suggestFontSize": 12,
