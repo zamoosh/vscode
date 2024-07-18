@@ -189,7 +189,6 @@
     "editor.smoothScrolling": true,
     "editor.mouseWheelScrollSensitivity": 2,
     "editor.autoClosingBrackets": "always",
-    "workbench.colorTheme": "Theme Darker",
     "indentRainbow.colors": [
         "rgba(98, 71, 170,0.15)",
         "rgba(114, 81, 181,0.15)",
@@ -211,4 +210,5 @@
     "gitlens.ai.experimental.model": "openai:gpt-4o",
     "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
     "workbench.iconTheme": "a-file-icon-vscode",
+    "workbench.colorTheme": "Theme Darker",
 }
