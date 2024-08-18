@@ -4,6 +4,7 @@
     "gopls": {
         "ui.semanticTokens": true,
     },
+    "go.useLanguageServer": true,
     "[go]": {
         "editor.insertSpaces": false,
         "editor.formatOnSave": false,
@@ -210,5 +211,5 @@
     "gitlens.ai.experimental.model": "openai:gpt-4o",
     "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
     "workbench.iconTheme": "a-file-icon-vscode",
-    "workbench.colorTheme": "Theme Darker",
+    "workbench.colorTheme": "Theme",
 }
