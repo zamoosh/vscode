@@ -41,9 +41,8 @@
     "workbench.tree.expandMode": "doubleClick",
     "workbench.tree.indent": 20,
     "debug.console.fontSize": 12,
-    "editor.inlayHints.fontFamily": "'JetBrainsMono NF'",
     "scm.inputFontSize": 12,
-    "terminal.integrated.lineHeight": 1.4,
+    "terminal.integrated.lineHeight": 1.3,
     "autoDocstring.guessTypes": true,
     "autoDocstring.docstringFormat": "google",
     "editor.detectIndentation": true,
@@ -204,6 +203,7 @@
     "explorer.compactFolders": false,
     "notebook.defaultFormatter": "ms-python.black-formatter",
     "python.languageServer": "Pylance",
+    // "python.languageServer": "Jedi",
     "python.analysis.inlayHints.pytestParameters": true,
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.inlayHints.variableTypes": true,
@@ -211,9 +211,8 @@
     "gitlens.ai.experimental.model": "openai:gpt-4o",
     "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
     "workbench.iconTheme": "a-file-icon-vscode",
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
+    "html.format.templating": true,
+    "database-client.autoSync": true,
     "workbench.colorTheme": "Catppuccin Mocha",
-    "window.newWindowProfile": "1403-11-09",
+    "files.autoSave": "afterDelay",
 }
