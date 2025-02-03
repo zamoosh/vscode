@@ -10,11 +10,6 @@
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
     {
-        "key": "alt+f12",
-        "command": "workbench.action.terminal.newInActiveWorkspace",
-        "when": "terminalProcessSupported"
-    },
-    {
         "key": "ctrl+q",
         "command": "-workbench.action.quit"
     },
@@ -81,5 +76,13 @@
     {
         "key": "ctrl+shift+l",
         "command": "workbench.action.terminal.clear"
+    },
+    {
+        "key": "alt+f12",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
     }
 ]
