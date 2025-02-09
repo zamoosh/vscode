@@ -1,13 +1,18 @@
 {
+    "debug.confirmOnExit": "always",
+    "task.autoDetect": "on",
     "editor.trimAutoWhitespace": false,
     // === GO === //
     "gopls": {
         "ui.semanticTokens": true,
     },
     "go.useLanguageServer": true,
+    "go.formatTool": "default",
     "[go]": {
         "editor.insertSpaces": false,
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": true,
+        "editor.suggest.showStructs": true,
+        "editor.suggest.showColors": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": "always"
         }
@@ -15,11 +20,55 @@
     "workbench.sideBar.location": "left",
     "window.titleBarStyle": "custom",
     // === PYTHON === //
+    "editor.autoIndent": "advanced",
+    "terminal.explorerKind": "integrated",
+    "terminal.integrated.suggest.enabled": true,
+    "terminal.integrated.suggest.quickSuggestions": true,
+    "terminal.integrated.shellIntegration.enabled": true,
+    
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.completeFunctionParens": true,
-    "python.analysis.autoSearchPaths": true,
+    // "python.analysis.autoSearchPaths": true,
+    // "pyright.disableLanguageServices": false,
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        // {
+        //     "name": "sklearn",
+        //     "depth": 2
+        // },
+        // {
+        //     "name": "matplotlib",
+        //     "depth": 2
+        // },
+        // {
+        //     "name": "scipy",
+        //     "depth": 2
+        // },
+        {
+            "name": "django",
+            "depth": 5
+        },
+        // {
+        //     "name": "flask",
+        //     "depth": 2
+        // },
+        // {
+        //     "name": "fastapi",
+        //     "depth": 2
+        // }
+    ],
+    "python.analysis.autoFormatStrings": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.languageServerMode": "default",
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.terminal.executeInFileDir": true,
     "[python]": {
-        "editor.autoIndent": "keep",
         "diffEditor.ignoreTrimWhitespace": false,
         "gitlens.codeLens.symbolScopes": [
             "!Module"
@@ -27,12 +76,13 @@
         "editor.formatOnType": false,
         "editor.formatOnSave": true,
         "editor.wordBasedSuggestions": "allDocuments",
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        // "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.autoClosingDelete": "always",
         "editor.autoClosingBrackets": "always",
         "editor.autoClosingQuotes": "always",
         "editor.rename.enablePreview": true,
         "editor.suggest.showIcons": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "terminal.integrated.cursorStyle": "line",
     "[html]": {
@@ -63,7 +113,7 @@
     "editor.suggest.showVariables": true,
     "editor.suggest.showColors": true,
     "editor.suggest.preview": true,
-    "debug.console.lineHeight": 1.7,
+    "debug.console.lineHeight": 1.5,
     "editor.autoClosingQuotes": "beforeWhitespace",
     "editor.suggestFontSize": 12,
     "notebook.output.lineHeight": 2,
@@ -90,8 +140,7 @@
     "window.customTitleBarVisibility": "auto",
     "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
-    "editor.minimap.showSlider": "always",
-    "editor.minimap.enabled": false,
+
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
     "explorer.fileNesting.patterns": {
@@ -192,6 +241,15 @@
     "editor.mouseWheelScrollSensitivity": 2,
     "editor.autoClosingBrackets": "always",
     "editor.suggest.insertMode": "replace",
+    "editor.foldingHighlight": true,
+    "editor.showFoldingControls": "mouseover",
+    "editor.foldingImportsByDefault": true,
+    "editor.foldingStrategy": "auto",
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.enabled": false,
+    "editor.suggest.filterGraceful": true,
+    "editor.suggest.showInlineDetails": true,
+        
     // "indentRainbow.colors": [
     //     "rgba(98, 71, 170,0.15)",
     //     "rgba(114, 81, 181,0.15)",
@@ -205,22 +263,21 @@
     // ],
     "explorer.compactFolders": false,
     "notebook.defaultFormatter": "ms-python.black-formatter",
-    "python.analysis.useLibraryCodeForTypes": true,
-    "python.languageServer": "Default",
-    "python.analysis.languageServerMode": "default",
-    "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.typeCheckingMode": "standard",
-    "python.analysis.inlayHints.variableTypes": true,
-    "python.analysis.inlayHints.callArgumentNames": "all",
-    "python.terminal.executeInFileDir": true,
-    "gitlens.ai.experimental.model": "openai:gpt-4o",
     "workbench.productIconTheme": "a-file-icon-vscode-product-icon-theme",
     "workbench.iconTheme": "a-file-icon-vscode",
     "html.format.templating": true,
-    "database-client.autoSync": true,
+    "html.suggest.html5": true,
+    
+    // "database-client.autoSync": true,
+    
     "files.autoSave": "afterDelay",
-    "black-formatter.args": [
-        "--line-length 120"
-    ],
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Best Themes - Tomorrow Night Minimal",
+    "git.suggestSmartCommit": true,
+    "git.autofetch": true,
+    
+    // "path-intellisense.absolutePathToWorkspace": false,
+    "python.analysis.disableTaggedHints": false,
+    "explorer.enableDragAndDrop": true,
+    "explorer.decorations.colors": true,
+    "explorer.autoReveal": "focusNoScroll",
 }
