@@ -21,15 +21,18 @@
     "window.titleBarStyle": "custom",
     // === PYTHON === //
     "editor.autoIndent": "advanced",
-    "terminal.explorerKind": "integrated",
+    "terminal.explorerKind": "both",
     "terminal.integrated.suggest.enabled": true,
     "terminal.integrated.suggest.quickSuggestions": true,
     "terminal.integrated.shellIntegration.enabled": true,
     
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.completeFunctionParens": true,
-    // "python.analysis.autoSearchPaths": true,
-    // "pyright.disableLanguageServices": false,
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.extraPaths": [
+        "/W/venv/rayan/venv/lib/python3.10/site-packages",
+    ],
+    "python.terminal.shellIntegration.enabled": true,
     "python.analysis.useLibraryCodeForTypes": true,
     "python.terminal.activateEnvironment": true,
     "python.analysis.autoImportCompletions": true,
@@ -94,7 +97,7 @@
     "workbench.tree.indent": 20,
     "debug.console.fontSize": 12,
     "scm.inputFontSize": 12,
-    "terminal.integrated.lineHeight": 1.3,
+    "terminal.integrated.lineHeight": 1.2,
     "autoDocstring.guessTypes": true,
     "autoDocstring.docstringFormat": "google",
     "editor.detectIndentation": true,
@@ -280,4 +283,22 @@
     "explorer.enableDragAndDrop": true,
     "explorer.decorations.colors": true,
     "explorer.autoReveal": "focusNoScroll",
+    "makefile.configureOnOpen": true,
+    "[makefile]": {
+        "editor.autoIndent": "full",
+        "editor.insertSpaces": false,
+        "editor.suggest.preview": true,
+        
+    },
+    "notebook.cellExecutionTimeVerbosity": "verbose",
+    "notebook.compactView": false,
+    "notebook.markdown.lineHeight": 23,
+    "notebook.markup.fontFamily": "JetBrainsMono NF",
+    "notebook.output.fontFamily": "JetBrainsMono NF",
+    "notebook.showFoldingControls": "always",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "black-formatter.args": [
+        "--line-length",
+        "120"
+    ],
 }
